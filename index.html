@@ -2,11 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brick Breaker Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <canvas id="gameCanvas" width="480" height="320"></canvas>
+<body>  
+  <div class="game-container">
+    <ul class="score-board">
+      <li><p>High Score: <span id="ui-best">0</span></p></li>
+      <li><p>Bounces: <span id="ui-score">0</span></p></li>
+      <li> <p>Attempts: <span id="ui-attempts">0</span></p></li>
+    </ul>
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
